@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Russo One", sans-serif;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100%;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px
+  }
+  
+  .container form input {
+    border: 0;
+    outline: 0;
+    height: 60px;
+    width: 60px;
+    margin: 5px 4px;
+    font-size: 25px;
+    border-radius: 2px;
+    background: transparent;
+    box-shadow: -3px -3px 5px lightgray, 3px 3px 5px ghostwhite;
+    cursor: pointer;
+    transition: all .3s ease;
+  }
+  
+  form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+  }
+  
+  form .display input {
+    flex: 1;
+    text-align: right;
+    font-size: 2rem;
+    box-shadow: none;
+    border: 3px inset;
+  }
+  
+  form input.equal {
+    width: 132px;
+  }
+
+  input[type="button"]:hover {
+    background-color: rgb(58, 58, 58);
+    color: white;
+  }
